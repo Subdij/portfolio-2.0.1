@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -14,19 +15,19 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-6 place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-              Hello, I'm {""}
+          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-purple-600">
+              Hello, I&apos;m{" "}
             </span>
             <br></br>
             <TypeAnimation
               sequence={[
                 "Ziyad",
-                1000,
+                3000,
                 "FullStack Developer",
-                1000,
+                3000,
                 "Digital Multimedia",
-                1000,
+                3000,
               ]}
               wrapper="span"
               speed={50}
@@ -40,10 +41,7 @@ const HeroSection = () => {
             nihil cupiditate exercitationem quos.
           </p>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-[#state-200] text-white">
-              Hire Me
-            </button>
-            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-[#state-800] text-white mt-3">
+            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-yellow-400 to-purple-600 hover:bg-[#state-800] text-white mt-3">
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV
               </span>
