@@ -1,32 +1,20 @@
 "use client";
 import Image from "next/image";
-import React, { useState, useEffect } from "react";
-import LoadingScreen from "./components/LoadingScreen";
+import React from "react";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
 import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
-import Cursor from "./components/Cursor";
+import Cursor from "./components/cursor";
 
-export default function Home() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  }, []);
-
+export default function Project() {
   return (
     <div>
-      {loading ? (
-        <LoadingScreen />
-      ) : (
         <main className="flex min-h-screen flex-col bg-[#121212]">
           <Cursor></Cursor>
-          <Navbar></Navbar>
+          <Navbar />
           <div className="container mt-24 mx-auto px-12 py-4">
             <HeroSection />
             <AboutSection />
@@ -35,7 +23,6 @@ export default function Home() {
           </div>
           <Footer />
         </main>
-      )}
     </div>
   );
 }

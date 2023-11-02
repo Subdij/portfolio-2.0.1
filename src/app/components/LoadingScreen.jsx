@@ -4,7 +4,7 @@ const LoadingScreen = () => {
   return (
     <div className="loading-screen">
       <div className="loader"></div>
-      <p>Chargement en cours...</p>
+      <p>Chargement de la puissance en cours...</p>
     </div>
   );
 };
