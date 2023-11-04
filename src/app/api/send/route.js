@@ -11,7 +11,7 @@ export async function POST(req, res) {
   try {
     const data = await resend.emails.send({
       from: fromEmail,
-      to: [""],
+      to: ["email"],
       subject: "Hello world",
       react: (
         <>
@@ -25,6 +25,6 @@ export async function POST(req, res) {
 
     return NextResponse.json(data);
   } catch (error) {
-    return NextResponse.json({ error });
+    return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }

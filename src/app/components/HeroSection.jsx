@@ -35,7 +35,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          I'm Ziyad Chaabi, Fullstack Web Developer, with a passion for new technologies.
+          I'm Ziyad Chaabi, Fullstack Developer, with a passion for new technologies.
           </p>
           <div>
             <Link href="/CV_Ziyad-CHAABI.pdf" passHref>
